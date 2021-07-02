@@ -21,7 +21,7 @@ for guessesTaken in range (1, 7):
                 print('Your guess is too high!')
             else:
                 break
-    except ValueError:
+    except:
         print("You didn't input a number")
 
 if guess == secretNumber:

@@ -11,15 +11,18 @@ print('Hi ' + name + ', I\'m thinking of a number between 1 and 7, try to guess 
 for guessesTaken in range (1, 7):
     print('You have ' + str(7 - guessesTaken) + ' guesses')
     guess = int(input())
-    if guess < 1 or guess > 7:
-        print("Your guess was out of range!")
-    else:
-        if guess < secretNumber:
-            print('Your guess is too low!')
-        elif guess > secretNumber:
-            print('Your guess is too high!')
+    try:
+        if guess < 1 or guess > 7:
+            print("Your guess was out of range!")
         else:
-            break
+            if guess < secretNumber:
+                print('Your guess is too low!')
+            elif guess > secretNumber:
+                print('Your guess is too high!')
+            else:
+                break
+    except ValueError:
+        print("You didn't input a number")
 
 if guess == secretNumber:
     print("Good job " + name + "! You guessed my number in " + str(guessesTaken) + " goes!")

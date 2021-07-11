@@ -4,4 +4,6 @@ On July 1st the Udemy course for [Automate the Boring Stuff with Python](https:/
 
 A lot of the earlier stuff is (as you can imagine) sorta dull for someone who's been programming for... however long I've been doing it now, but still it seems like a pretty invaluable resource as the course goes on, especially for someone who hates boring stuff lol.
 
+A note: some folders have significantly less content than others, this because a lot of work done in the course is done exclusively in the console and is therefore not save-able in this context
+
 Thanks to Al Sweigart, the author.
